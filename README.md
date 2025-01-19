@@ -3,7 +3,7 @@
 This repository contains the source codes of the prototype for our submission: `HAWKEYE: Diagnosing RDMA Network Performance Anomalies
 with PFC Provenance`.
 
-It contains the NS-3 simulator in `./simulation/`; the detection agent monitoring RTT in `./agent/`; the Tofino switch codes including p4 files for the data plane in `./switch/`, and C files for the controller in `./ctrl/`.
+It contains the NS-3 simulator in `./simulation/`; the detection agent monitoring RTT in `./detection-agent/`; the Tofino switch codes including p4 files for the data plane in `./switch/`, and C files for the controller in `./ctrl/`.
 
 ## NS-3 simulator for Hawkeye
 
@@ -52,7 +52,7 @@ In the code `simulation/scratch/third_deadlock.cc`, we have modified the routing
 
 The detection agent monitors flow RTT and send polling packet to network, built based on DOCA PCC.
 
-Please refer to `detectin-agent/README.md` for specific building and runnning instructions.
+Please refer to `detection-agent/README.md` for specific building and runnning instructions.
 
 ## Tofino prototype
 
